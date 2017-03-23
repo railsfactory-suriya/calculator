@@ -312,7 +312,7 @@ func thirtyifconditions() (int) {
     }
   }
   return 5
-} 
+}
 
 func IsPrime(value int) bool {
     for i := 2; i <= int(math.Floor(float64(value) / 2)); i++ {
