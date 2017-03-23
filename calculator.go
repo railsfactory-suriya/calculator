@@ -221,10 +221,10 @@ func main() {
 
 
       if r.MatchString(cell.GetNumberFormat())  {
-        cellData = cell.FormattedValue()
+        //cellData = cell.FormattedValue()
         // HACK: Sometimes the date is not parsed properly and it returns something like below
         // strconv.ParseFloat: parsing "6/30/2015": invalid syntax
-        if strings.HasPrefix(cellData, "strconv.ParseFloat: parsing ") && strings.HasSuffix(cellData, ": invalid syntax") {
+        //if strings.HasPrefix(cellData, "strconv.ParseFloat: parsing ") && strings.HasSuffix(cellData, ": invalid syntax") {
           newCellData := strings.Split(cellData, "strconv.ParseFloat: parsing \"")
           newCellData = strings.Split(newCellData[1], "\": invalid syntax")
           cellData = strings.Trim(newCellData[0], " ")
