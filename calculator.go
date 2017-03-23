@@ -278,7 +278,7 @@ func thirtyifconditions() (int) {
                                                     if (26==26) { 
                                                       if (27==27) { 
                                                         if (28==28) { 
-                                                          if (29==29) { 
+                                                          if (29==29) {
                                                             if (30==30) {
                                                               return 1
                                                             }
@@ -286,7 +286,7 @@ func thirtyifconditions() (int) {
                                                         }
                                                       }
                                                     }
-                                                  } 
+                                                  }
                                                 }
                                               }
                                             }
